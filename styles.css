@@ -1,0 +1,22 @@
+  html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'SolaimanLipi', sans-serif;
+      background-color: #f5f9f6;
+    }
+    .hero {
+      background: url('your-hero-image.jpg') center/cover no-repeat;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+    .donation-section {
+      background-color: #e9f7ef;
+      padding: 40px 20px;
+      border-radius: 10px;
+    }
+    .btn-green {
+      background-color: #28a745;
+      color: white;
+    }
