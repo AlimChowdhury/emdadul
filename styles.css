@@ -25,21 +25,21 @@
     }
   }
 
-   .scroll-text {
-      white-space: nowrap;
-      overflow: hidden;
-      animation: scroll-left 20s linear infinite;
+  .scroll-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-left 25s linear infinite;
+  }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(100%);
     }
 
-    @keyframes scroll-left {
-      0% {
-        transform: translateX(100%);
-      }
-
-      100% {
-        transform: translateX(-100%);
-      }
+    100% {
+      transform: translateX(-100%);
     }
+  }
 
 
   .donation-section {
