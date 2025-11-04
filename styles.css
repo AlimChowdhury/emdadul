@@ -1,22 +1,54 @@
   html {
-      scroll-behavior: smooth;
-    }
-    body {
-      font-family: 'SolaimanLipi', sans-serif;
-      background-color: #f5f9f6;
-    }
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'SolaimanLipi', sans-serif;
+    background-color: #f5f9f6;
+  }
+
+  .hero {
+    background: url('index_pic2.png') center center / cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+  }
+
+  /* Retina/HiDPI support */
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .hero {
-      background: url('your-hero-image.jpg') center/cover no-repeat;
-      color: white;
-      padding: 100px 0;
-      text-align: center;
+      background-image: url('index_pic2@2x.png');
     }
-    .donation-section {
-      background-color: #e9f7ef;
-      padding: 40px 20px;
-      border-radius: 10px;
+  }
+
+   .scroll-text {
+      white-space: nowrap;
+      overflow: hidden;
+      animation: scroll-left 20s linear infinite;
     }
-    .btn-green {
-      background-color: #28a745;
-      color: white;
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(100%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
     }
+
+
+  .donation-section {
+    background-color: #e9f7ef;
+    padding: 40px 20px;
+    border-radius: 10px;
+  }
+
+  .btn-green {
+    background-color: #28a745;
+    color: white;
+  }
