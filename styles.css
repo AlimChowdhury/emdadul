@@ -1,54 +1,183 @@
-  html {
-    scroll-behavior: smooth;
-  }
+/* 🌍 Global Styles */
+html {
+  scroll-behavior: smooth;
+}
 
-  body {
-    font-family: 'SolaimanLipi', sans-serif;
-    background-color: #f5f9f6;
-  }
+body {
+  font-family: 'SolaimanLipi', sans-serif;
+  background-color: #f5f9f6;
+}
 
+/* 🏞 Hero Section */
+.hero {
+  background: url('index_pic2.png') center center / cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+/* 📱 Retina/HiDPI Support */
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
   .hero {
-    background: url('index_pic2.png') center center / cover no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: white;
-    padding: 100px 0;
-    text-align: center;
+    background-image: url('index_pic2@2x.png');
+  }
+}
+
+/* 🔔 Notice Scrolling Text */
+.scroll-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-left 25s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
   }
 
-  /* Retina/HiDPI support */
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .hero {
-      background-image: url('index_pic2@2x.png');
-    }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* 💚 Donation Section */
+.donation-section {
+  background-color: #e9f7ef;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+/* ✅ Green Button */
+.btn-green {
+  background-color: #155724;
+  color: white;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-green:hover {
+  background-color: #155724;
+}
+
+/* 📌 Sticky Footer Support */
+body.d-flex {
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main.flex-grow-1 {
+  flex-grow: 1;
+}
+
+/* 🖋 Section Scroll Margin (for fixed navbar) */
+section {
+  scroll-margin-top: 70px;
+}
+
+/* Force navbar items into a single line on large screens */
+@media (min-width: 992px) {
+  .navbar-nav {
+    flex-direction: row !important;
+    flex-wrap: nowrap;
   }
 
-  .scroll-text {
-    display: inline-block;
+  .navbar-nav .nav-item {
+    margin-left: 0.5rem;
+  }
+
+  .navbar-nav .nav-link {
     white-space: nowrap;
-    animation: scroll-left 25s linear infinite;
   }
+}
 
-  @keyframes scroll-left {
-    0% {
-      transform: translateX(100%);
-    }
+/* 🔗 Default nav link style */
+.navbar-nav .nav-link {
+  color: #07090a !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
 
-    100% {
-      transform: translateX(-100%);
-    }
-  }
+/* ✅ Hover turns green */
+.navbar-nav .nav-link:hover {
+  color: #155724 !important;
+  /* Bootstrap green */
+  background-color: rgba(40, 167, 69, 0.1);
+  /* light green background */
+  border-radius: 6px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.navbar-nav .nav-link.active {
+  color: #155724 !important;
+  font-weight: 600;
+}
 
 
-  .donation-section {
-    background-color: #e9f7ef;
-    padding: 40px 20px;
-    border-radius: 10px;
-  }
+/* 📚 eBook Table Styling */
+.ebook-table th {
+  background-color: #d4edda;
+  color: #155724;
+  font-weight: bold;
+}
 
-  .btn-green {
-    background-color: #28a745;
-    color: white;
-  }
+.ebook-table td {
+  vertical-align: middle;
+  font-size: 0.95rem;
+}
+
+/* 💚 Green Download Button */
+.btn-green {
+  background-color: #28a745;
+  color: white;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-green:hover {
+  background-color: #218838;
+}
+
+/* Blog Card Styling */
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  color: #155724;
+  font-weight: bold;
+}
+
+.card-footer {
+  background-color: #f8f9fa;
+  font-size: 0.85rem;
+}
+
+/* Dropdown menu custom styling */
+.dropdown-menu {
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.dropdown-item {
+  color: #155724;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #28a745;
+  color: #fff;
+}

@@ -1,167 +1,107 @@
 <!DOCTYPE html>
 <html lang="bn">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>এমদাদুল উলুম হাফিজিয়া মাদ্রাসা ও এতিমখানা</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
 
-  <body>
-    <!-- 🔝 Navbar -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top"
-    >
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="#home"
-          >এমদাদুল উলুম হাফিজিয়া মাদ্রাসা ও এতিমখানা</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="#home">হোম</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">আমাদের সম্পর্কে</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#activities">কার্যক্রম</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog.html">ব্লগ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="gallery.html">গ্যালারী</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="ebooks.html">ই-বুক</a>
-            </li>
-            <!-- <li class="nav-item"><a class="nav-link" href="#media">মিডিয়া</a></li> -->
-            <!-- <li class="nav-item"><a class="nav-link" href="#blog">ব্লগ</a></li> -->
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">যোগাযোগ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link btn btn-green ms-2" href="#donate">দান করুন</a>
-            </li>
-          </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>এমদাদুল উলুম হাফিজিয়া মাদ্রাসা ও এতিমখানা</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+</head>
+
+<body>
+  <!-- 🔝 Navbar Placeholder -->
+  <div id="navbar-placeholder"></div>
+
+  <div><br /></div>
+
+  <!-- 🔔 Notice Section with Scrolling Text -->
+  <div class="bg-success py-2 px-3 shadow-sm" style="margin-top: 56px">
+    <div class="container overflow-hidden">
+      <div class="scroll-text text-white fw-bold">
+        শিক্ষক প্রশিক্ষণ প্রোগ্রাম ২৮ মে, সকাল ১০টা, অফিসে অনুষ্ঠিত হবে।
+      </div>
+    </div>
+  </div>
+
+  <!-- 🌱 Hero Section -->
+  <section id="home" class="hero d-flex align-items-center justify-content-center mt-5">
+    <div class="container text-center">
+      <h1 class="display-5 fw-bold">
+        এমদাদুল উলুম হাফিজিয়া মাদ্রাসা ও এতিমখানা
+      </h1>
+      <p class="lead mt-3">
+        একটি অরাজনৈতিক, স্বেচ্ছাসেবী ও গবেষণামূলক প্রতিষ্ঠান, যা সমাজ সংস্কার
+        ও মানবকল্যাণে নিবেদিত।
+      </p>
+      <a href="#about" class="btn btn-green mt-4">আরও জানুন</a>
+    </div>
+  </section>
+
+  <!-- 🧭 About Section -->
+  <section id="about" class="container my-5">
+    <h2 class="text-center mb-4">আমাদের সম্পর্কে</h2>
+    <p class="text-center">
+      আমরা শিক্ষা, স্বাস্থ্যসেবা, এবং মানবিক সহায়তার মাধ্যমে সমাজে ইতিবাচক
+      পরিবর্তন আনতে কাজ করছি। আমাদের লক্ষ্য হলো একটি নৈতিক, সচেতন এবং
+      সহানুভূতিশীল সমাজ গঠন।
+    </p>
+  </section>
+
+  <!-- 🛠 Activities Section -->
+  <section id="activities" class="container my-5">
+    <h2 class="text-center mb-4">কার্যক্রম</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Training" />
+          <div class="card-body">
+            <h5 class="card-title">প্রশিক্ষণ কর্মসূচি</h5>
+            <p class="card-text">আল-হাইআহ লিল মেলাফাতুল ইসলামিয়া</p>
+          </div>
         </div>
       </div>
-    </nav>
-
-    <!-- 🔔 Notice Section with Scrolling Text -->
-    <div class="bg-success py-2 px-3 shadow-sm" style="margin-top: 56px">
-      <div class="container overflow-hidden">
-        <div class="scroll-text text-white fw-bold">
-          শিক্ষক প্রশিক্ষণ প্রোগ্রাম ২৮ মে, সকাল ১০টা, বনানী অফিসে অনুষ্ঠিত হবে।
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Relief" />
+          <div class="card-body">
+            <h5 class="card-title">ত্রাণ ও পুনর্বাসন</h5>
+            <p class="card-text">দুর্যোগকালীন ত্রাণ বিতরণ কর্মসূচি</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Food" />
+          <div class="card-body">
+            <h5 class="card-title">মানবিক কার্যক্রম</h5>
+            <p class="card-text">দরিদ্রদের জন্য খাবার তৈরী</p>
+          </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- 🌱 Hero Section -->
-    <section
-      id="home"
-      class="hero d-flex align-items-center justify-content-center mt-5"
-    >
-      <div class="container text-center">
-        <h1 class="display-5 fw-bold">
-          এমদাদুল উলুম হাফিজিয়া মাদ্রাসা ও এতিমখানা
-        </h1>
-        <p class="lead mt-3">
-          একটি অরাজনৈতিক, স্বেচ্ছাসেবী ও গবেষণামূলক প্রতিষ্ঠান, যা সমাজ সংস্কার
-          ও মানবকল্যাণে নিবেদিত।
-        </p>
-        <a href="#about" class="btn btn-green mt-4">আরও জানুন</a>
-      </div>
-    </section>
-
-    <!-- 🧭 About Section -->
-    <section id="about" class="container my-5">
-      <h2 class="text-center mb-4">আমাদের সম্পর্কে</h2>
-      <p class="text-center">
-        আমরা শিক্ষা, স্বাস্থ্যসেবা, এবং মানবিক সহায়তার মাধ্যমে সমাজে ইতিবাচক
-        পরিবর্তন আনতে কাজ করছি। আমাদের লক্ষ্য হলো একটি নৈতিক, সচেতন এবং
-        সহানুভূতিশীল সমাজ গঠন।
-      </p>
-    </section>
-
-    <!-- 🛠 Activities Section -->
-    <section id="activities" class="container my-5">
-      <h2 class="text-center mb-4">কার্যক্রম</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img
-              src="https://via.placeholder.com/350x200"
-              class="card-img-top"
-              alt="Training"
-            />
-            <div class="card-body">
-              <h5 class="card-title">প্রশিক্ষণ কর্মসূচি</h5>
-              <p class="card-text">আল-হাইআহ লিল মেলাফাতুল ইসলামিয়া</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img
-              src="https://via.placeholder.com/350x200"
-              class="card-img-top"
-              alt="Relief"
-            />
-            <div class="card-body">
-              <h5 class="card-title">ত্রাণ ও পুনর্বাসন</h5>
-              <p class="card-text">দুর্যোগকালীন ত্রাণ বিতরণ কর্মসূচি</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img
-              src="https://via.placeholder.com/350x200"
-              class="card-img-top"
-              alt="Food"
-            />
-            <div class="card-body">
-              <h5 class="card-title">মানবিক কার্যক্রম</h5>
-              <p class="card-text">দরিদ্রদের জন্য খাবার তৈরী</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 🎥 Media Section -->
-    <!-- <section id="media" class="container my-5">
+  <!-- 🎥 Media Section -->
+  <!-- <section id="media" class="container my-5">
       <h2 class="text-center mb-4">মিডিয়া</h2>
       <p class="text-center">ভিডিও, ছবি ও সংবাদ প্রকাশনা এখানে থাকবে।</p>
     </section> -->
 
-    <!-- 📝 Blog Section -->
-    <!-- <section id="blog" class="container my-5">
+  <!-- 📝 Blog Section -->
+  <!-- <section id="blog" class="container my-5">
       <h2 class="text-center mb-4">ব্লগ</h2>
       <p class="text-center">
         সাম্প্রতিক ব্লগ পোস্ট ও চিন্তাভাবনা এখানে থাকবে।
       </p>
     </section> -->
 
-    <!-- 💚 Donation Section -->
-    <section id="donate" class="donation-section container my-5">
-      <h2 class="text-center mb-4">আপনার অনুদান প্রদান করুন</h2>
-      <form class="row g-3 justify-content-center">
+  <!-- 💚 Donation Section -->
+  <section id="donate" class="donation-section container my-5">
+    <h2 class="text-center mb-4">আপনার অনুদান প্রদান করুন</h2>
+    <!-- <form class="row g-3 justify-content-center">
         <div class="col-md-4">
           <label for="donationType" class="form-label">অনুদানের ধরন</label>
           <select id="donationType" class="form-select">
@@ -182,13 +122,13 @@
         <div class="col-12 text-center">
           <button type="submit" class="btn btn-green px-5">অনুদান দিন</button>
         </div>
-      </form>
-    </section>
+      </form> -->
+  </section>
 
-    <!-- 📞 Contact Section -->
-    <section id="contact" class="container my-5">
-      <h2 class="text-center mb-4">যোগাযোগ</h2>
-      <form class="row g-3">
+  <!-- 📞 Contact Section -->
+  <section id="contact" class="container my-5">
+    <h2 class="text-center mb-4">যোগাযোগ</h2>
+    <!-- <form class="row g-3">
         <div class="col-md-6">
           <label for="name" class="form-label">আপনার নাম</label>
           <input type="text" class="form-control" id="name" />
@@ -204,16 +144,26 @@
         <div class="col-12 text-center">
           <button type="submit" class="btn btn-green">পাঠান</button>
         </div>
-      </form>
-    </section>
+      </form> -->
+  </section>
 
-    <!-- 📌 Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-      <p class="mb-0">
-        © ২০২৫ এমদাদুল উলুম হাফিজিয়া মাদ্রাসা ও এতিমখানা | সকল অধিকার সংরক্ষিত
-      </p>
-    </footer>
+  <!-- 📌 Footer Placeholder -->
+  <div id="footer-placeholder"></div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    fetch("nav.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("navbar-placeholder").innerHTML = data;
+      });
+
+    fetch("footer.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
+</body>
+
 </html>

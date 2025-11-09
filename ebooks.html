@@ -1,40 +1,118 @@
 <!DOCTYPE html>
 <html lang="bn">
+
 <head>
-  <meta charset="UTF-8">
-  <title>ই-বুক | আস-সুন্নাহ ফাউন্ডেশন</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <title>ই-বুক | এমদাদুল উলুম হাফিজিয়া মাদ্রাসা ও এতিমখানা</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
   <style>
     .download-btn {
       background-color: #6c757d;
       color: white;
       transition: background-color 0.3s ease;
     }
+
     .download-btn:hover {
       background-color: #28a745;
       color: white;
     }
   </style>
 </head>
-<body>
-  <div class="container my-5">
-    <h1 class="text-center mb-4">ই-বুক সংগ্রহ</h1>
-    <p class="text-center mb-5">আমাদের প্রকাশিত ই-বুকগুলো নিচ থেকে ডাউনলোড করুন:</p>
 
-    <div class="list-group">
-      <div class="d-flex justify-content-between align-items-center list-group-item">
-        📘 ইসলামিক জীবনধারা
-        <a href="pdfs/book1.pdf" class="btn download-btn" download>ডাউনলোড</a>
+<body>
+  <!-- 🔝 Navbar Placeholder -->
+  <div id="navbar-placeholder"></div>
+  <div><br></div>
+  <main class="flex-grow-1">
+    <!-- All your content goes here -->
+    <section id="ebooks" class="container my-5">
+      <h2 class="text-center mb-4">ই-বুক সংগ্রহ</h2>
+      <p class="text-center mb-5">ই-বুকগুলো নিচ থেকে ডাউনলোড করুন:</p>
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover ebook-table text-center">
+          <thead class="table-success">
+            <tr>
+              <th>ক্রমিক</th>
+              <th>শ্রেণী</th>
+              <th>বইয়ের নাম</th>
+              <th>ডাউনলোড</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>১</td>
+              <td>ইবতেদায়ী প্রথম শ্রেণী</td>
+              <td>Bangla</td>
+              <td>
+                <a href="ebook/Ibtadaie Amar Bangla Book Class 1.pdf" class="btn btn-green btn-sm" download>ডাউনলোড</a>
+              </td>
+            </tr>
+            <tr>
+              <td>২</td>
+              <td>ইবতেদায়ী প্রথম শ্রেণী</td>
+              <td>English</td>
+              <td>
+                <a href="ebook/Ibtadiae English For Today Class 1.pdf" class="btn btn-green btn-sm" download>ডাউনলোড</a>
+              </td>
+            </tr>
+            <tr>
+              <td>৩</td>
+              <td>ইবতেদায়ী প্রথম শ্রেণী</td>
+              <td>Math</td>
+              <td>
+                <a href="ebook/Ibtedaie Math Class 1.pdf" class="btn btn-green btn-sm" download>ডাউনলোড</a>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>ইবতেদায়ী প্রথম শ্রেণী</td>
+              <td>Quran Majid O Tajvid</td>
+              <td>
+                <a href="ebook/Ibtadaie Quran Majid O Tajvid Class 1.pdf" class="btn btn-green btn-sm"
+                  download>ডাউনলোড</a>
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>ইবতেদায়ী প্রথম শ্রেণী</td>
+              <td>Akaeid o Fikkah</td>
+              <td>
+                <a href="ebook/Ibtedaie Akaeid O Fikkah Class 1.pdf" class="btn btn-green btn-sm" download>ডাউনলোড</a>
+              </td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>ইবতেদায়ী প্রথম শ্রেণী</td>
+              <td>Addurusul Arabiah</td>
+              <td>
+                <a href="ebook/Ibtadiae Addurusul Arabiah Class 1.pdf" class="btn btn-green btn-sm" download>ডাউনলোড</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div class="d-flex justify-content-between align-items-center list-group-item">
-        📗 সমাজকল্যাণ ও দান
-        <a href="pdfs/book2.pdf" class="btn download-btn" download>ডাউনলোড</a>
-      </div>
-      <div class="d-flex justify-content-between align-items-center list-group-item">
-        📕 শিশুদের জন্য ইসলাম
-        <a href="pdfs/book3.pdf" class="btn download-btn" download>ডাউনলোড</a>
-      </div>
-    </div>
-  </div>
+    </section>
+  </main>
+
+  <!-- 📌 Footer Placeholder -->
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    fetch("nav.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("navbar-placeholder").innerHTML = data;
+      });
+
+    fetch("footer.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
 </body>
+
 </html>
