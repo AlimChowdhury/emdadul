@@ -208,9 +208,19 @@ section {
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   z-index: 9999;
   display: none; /* hidden by default */
+  max-width: 90%;   /* popup itself won't exceed screen width */
 }
 
 #popup img {
-  max-width: 800px;
+  max-width: 100%;  /* image fits inside popup */
   height: auto;
+}
+@media (max-width: 768px) {
+  #popup {
+    max-width: 95%;   /* almost full width on mobile */
+  }
+
+  #popup img {
+    max-width: 100%;
+  }
 }
